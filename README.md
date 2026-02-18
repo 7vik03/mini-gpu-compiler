@@ -3,7 +3,7 @@
 
 A compiler for mini-gpu. Converts C-like kernel code to GPU assembly/binary.
 
-> **Note:** This will be developed after mini-gpu v1.0 is complete with working assembler. The assembler (`mini-gpu/tools/assembler.py`) is the v1 approach. This compiler is v2.
+> **Note:** This will be developed after mini-gpu v1.0 is complete with working assembler. The assembler is the v1 approach. This compiler is v2.
 
 ## Components
 
@@ -27,12 +27,3 @@ A compiler for mini-gpu. Converts C-like kernel code to GPU assembly/binary.
 - [ ] **Dead Code Elimination** — Remove unused code
 - [ ] **Common Subexpression Elimination** — Reuse computed values
 - [ ] **Loop Unrolling** — Unroll small loops (optional)
-
-## Language Specification
-
-### Kernel Definition
-```c
-__kernel void kernel_name(args...) {
-    // kernel body
-}
-```
